@@ -9,7 +9,7 @@ import { log } from "./logger.js";
 import { repoPath } from "./repo-root.js";
 
 const DEDUP_FILE = repoPath("signal-dedup-cache.json");
-const DEDUP_WINDOW_MS = 5 * 60 * 1000; // 5 minutes window to deduplicate
+const DEDUP_WINDOW_MS = 60 * 60 * 1000; // 1 hour window to deduplicate
 
 interface DedupRecord {
   pool: string; // pool address
@@ -64,9 +64,10 @@ export function shouldSendSignal(
   
   if (existing) {
     const ageSeconds = Math.floor((now - existing.timestamp) / 1000);
+    const ageMinutes = Math.floor(ageSeconds / 60);
     log(
       "dedup_blocked",
-      `Blocked duplicate ${eventType} for ${pairName || poolAddress} (sent ${ageSeconds}s ago)`
+      `Blocked duplicate ${eventType} for ${pairName || poolAddress} (sent ${ageMinutes}m ${ageSeconds % 60}s ago)`
     );
     return false;
   }

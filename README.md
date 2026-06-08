@@ -40,8 +40,10 @@ npm run dev
 See the full documentation in the docs folder to be added gradually or follow the guide below.Contributions
 This project is open-source. Contributions issues and pull requests are highly appreciated.
 
-Thanks to yunus-0x for the Meridian project which served as the initial foundation.License: MITStruktur Proyek
+Thanks to yunus-0x for the Meridian project which served as the initial foundation.
+License: MITStruktur Proyek
 obsidian-v1
+
 src
 core: Agent swarm and memory
 agents: Specialist agents

@@ -1,4 +1,6 @@
-OBSIDIAN V1Autonomous Multi-Agent DLMM and LP Agent for SolanaOBSIDIAN V1 is an autonomous liquidity provider AI agent designed to manage Liquidity Provider positions in Decentralized Liquidity Market Maker pools on the Solana network.This project is developed as an extension of the open-source Meridian foundation incorporating a multi-agent architecture vector-based memory and backtesting capabilities to support more structured decision making.Main Features
+OBSIDIAN V1
+
+Autonomous Multi-Agent DLMM and LP Agent for SolanaOBSIDIAN V1 is an autonomous liquidity provider AI agent designed to manage Liquidity Provider positions in Decentralized Liquidity Market Maker pools on the Solana network.This project is developed as an extension of the open-source Meridian foundation incorporating a multi-agent architecture vector-based memory and backtesting capabilities to support more structured decision making.Main Features
 Multi-Agent Swarm: Coordination between Planner Screener Analyst Risk-Assessor and Executor
 RAG Memory: Contextual storage and retrieval of lessons from every position
 Integrated Backtester: Simulation of strategies using historical data before live execution

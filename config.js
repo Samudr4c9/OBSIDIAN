@@ -86,7 +86,7 @@ export const config = {
     maxTop10Pct:       u.maxTop10Pct       ?? 60,  // max top 10 holders concentration
     allowedLaunchpads: u.allowedLaunchpads ?? [],  // allow-list launchpads, [] = no allow-list
     blockedLaunchpads:  u.blockedLaunchpads  ?? [],  // e.g. ["letsbonk.fun", "pump.fun"]
-    minTokenAgeHours:   u.minTokenAgeHours   ?? null, // null = no minimum
+    minTokenAgeHours:   u.minTokenAgeHours   ?? 1,  // UPDATED: 1 hour minimum
     maxTokenAgeHours:   u.maxTokenAgeHours   ?? null, // null = no maximum
   },
 

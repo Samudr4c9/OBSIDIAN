@@ -1,7 +1,9 @@
-OBSIDIAN V1
+OBSIDIAN
 
 Autonomous Multi-Agent DLMM and LP Agent for Solana
-OBSIDIAN V1 is an autonomous liquidity provider AI agent designed to manage Liquidity Provider positions in Decentralized Liquidity Market Maker pools on the Solana network.
+
+OBSIDIAN is an autonomous liquidity provider AI agent designed to manage Liquidity Provider positions in Decentralized Liquidity Market Maker pools on the Solana network.
+
 This project is developed as an extension of the open-source Meridian foundation incorporating a multi-agent architecture vector-based memory and backtesting capabilities to support more structured decision making.
 
 Main Features
@@ -12,18 +14,20 @@ Integrated Backtester: Simulation of strategies using historical data before liv
 Advanced DLMM Strategies: Dynamic bin rebalancing predictive impermanent loss and regime detection
 Multi-Source Data: Integration with Meteora API Birdeye Dexscreener as well as on-chain and sentiment analysis
 Flexible LLM Support: Compatible with local Ollama or external providers
-Safety-First Design: Dry-run simulation and multi-level approval layers Telegram Control and optional simple web dashboard
+Safety-First Design: Dry-run simulation and multi-level approval layers
+Telegram Control and optional simple web dashboard
 HiveMind Integration: Sharing lessons between agent instances
 
 How It Works
 
-The Screening Agent scans potential pools at regular intervals
-The Planner formulates the overall strategy
-The Analyst and Risk-Assessor perform in-depth evaluation
-The Executor carries out actions with approval
-The Historian stores results in memory for continuous learning
+1. The Screening Agent scans potential pools at regular intervals
+2. The Planner formulates the overall strategy
+3. The Analyst and Risk-Assessor perform in-depth evaluation
+4. The Executor carries out actions with approval
+5. The Historian stores results in memory for continuous learning
 
 Tech Stack
+
 Node.js 20 plus
 Solana Web3.js and meteora-ag dlmm
 LangChain for multi-agent orchestration
@@ -31,19 +35,23 @@ LanceDB for vector memory
 Cron scheduling and PM2 support
 
 Setup Quick
-git clone https://github.com/GhostcoinHQ/obsidian-v1.git
-cd obsidian-v1
+git clone https://github.com/Samudr4c9/obsidian.git
+cd obsidian
 npm install
 npm run setup
 npm run dev
 
-See the full documentation in the docs folder to be added gradually or follow the guide below.Contributions
+See the full documentation in the docs folder to be added gradually or follow the guide below.
+
+Contributions
 This project is open-source. Contributions issues and pull requests are highly appreciated.
 
 Thanks to yunus-0x for the Meridian project which served as the initial foundation.
-License: MITStruktur Proyek
-obsidian-v1
 
+License: MIT
+
+Struktur Proyek
+obsidian
 src
 core: Agent swarm and memory
 agents: Specialist agents
@@ -56,4 +64,3 @@ data
 env.example
 user-config.example.json
 README.md
-

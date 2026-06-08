@@ -1,0 +1,17 @@
+{
+  "deploySizeSol": 0.5,
+  "maxOpenPositions": 5,
+  "minOrganicScore": 75,
+  "minFeeTVLRatio": 0.0008,
+  "maxImpermanentLossThreshold": 8,
+  "riskPreset": "medium",
+  "llmModel": "anthropic/claude-3.5-sonnet",
+  "ollamaModel": "llama3.2",
+  "cycleIntervals": {
+    "screening": "20m",
+    "management": "8m"
+  },
+  "strategies": ["dynamic-bid-ask", "regime-adaptive"],
+  "backtestDays": 30,
+  "enableSentimentAnalysis": true
+}
